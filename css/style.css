@@ -6,10 +6,6 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
-header {
-	
-}
-
 nav {
 	float: right;
 }
@@ -52,21 +48,10 @@ nav a:hover::before {
 	width: 100%
 }
 
-/*
-.background {
-	background-attachment: fixed;
-	background-position: center; 
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 95vh;
-	width: 10vh;
-}
-*/
-
-#main-page {
+#main-bg {
 	background-image: url("../img/logo.png"), url("../img/logobg.png"), url("../img/background.png");
 	background-attachment: fixed;
-	background-position: center, center, center; 
+	background-position: 50% 40%, center, center; 
 	background-repeat: no-repeat;
 	background-size: auto, auto, cover;
 	height: 95vh;
@@ -74,6 +59,10 @@ nav a:hover::before {
 }
 
 .date {
+	position: absolute;
+	left: 42%;
+	top: 50%;
+	
 	font-family: Raleway;
 	font-style: normal;
 	font-weight: 500;
@@ -83,7 +72,6 @@ nav a:hover::before {
 	letter-spacing: 0.2em;
 	color: #ffff;
 	
-	text-align: justify;
 }
 
 #second-page {
