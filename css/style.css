@@ -1,0 +1,94 @@
+body {
+	margin: 0;
+	margin-right: 30px;
+	overflow-x: hidden;
+	background-color: #B0B4C8;
+	font-family: 'Raleway', sans-serif;
+}
+
+header {
+	
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 50px;
+	padding-top: 20px;
+	position: relative; 
+}
+
+nav a {
+	color: #ffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 20px;
+	letter-spacing: 0.2em;
+}
+
+nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	width: 100%;
+	background-color: #ffff;
+	position: absolute;
+	bottom: 0;
+	width: 0%;
+	transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+	width: 100%
+}
+
+/*
+.background {
+	background-attachment: fixed;
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 95vh;
+	width: 10vh;
+}
+*/
+
+#main-page {
+	background-image: url("../img/logo.png"), url("../img/logobg.png"), url("../img/background.png");
+	background-attachment: fixed;
+	background-position: center, center, center; 
+	background-repeat: no-repeat;
+	background-size: auto, auto, cover;
+	height: 95vh;
+	width: 200vh;
+}
+
+.date {
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	font-size: 40px;
+	text-align: center;
+	letter-spacing: 0.2em;
+	color: #ffff;
+	
+	text-align: justify;
+}
+
+#second-page {
+	background: linear-gradient(171.18deg, #202E74 2.11%, rgba(102, 110, 150, 0.55) 43.19%, #B0B4C8 53.93%);
+	height: 100vh;
+	width: 200vh;
+
+}
