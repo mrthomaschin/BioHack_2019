@@ -1,13 +1,14 @@
 body {
 	margin: 0;
-	margin-right: 30px;
 	overflow-x: hidden;
 	background-color: #B0B4C8;
 	font-family: 'Raleway', sans-serif;
 }
 
-nav {
-	float: right;
+#top-nav {
+	position: absolute;
+	right: 0;
+	border-width: 0px !important;
 }
 
 nav ul {
@@ -19,6 +20,7 @@ nav ul {
 nav li {
 	display: inline-block;
 	margin-left: 50px;
+	margin-right: 20px;
 	padding-top: 20px;
 	position: relative; 
 }
@@ -49,20 +51,46 @@ nav a:hover::before {
 }
 
 #main-bg {
-	background-image: url("../img/logo.png"), url("../img/logobg.png"), url("../img/background.png");
+	background-image: url("../img/background.jpg");
 	background-attachment: fixed;
-	background-position: 50% 40%, center, center; 
+	background-position: center; 
 	background-repeat: no-repeat;
-	background-size: auto, auto, cover;
-	height: 95vh;
+	background-size: cover;
+	height: 100vh;
 	width: 200vh;
+}
+
+
+#second-page {
+/*
+	background-color: #0A131C;
+*/
+	background-color: #212D3A;
+	height: 200vh;
+	width: 200vh;
+}
+
+.image .logo {
+	position: absolute;
+	margin-left: -21%;
+	top: 10%;
+	z-index: 1;
+}
+
+
+.image .logobg {
+	opacity: 0.65;
+	position: absolute;
+	margin-left: -21%;
+	top: 9%;
 }
 
 .date {
 	position: absolute;
-	left: 42%;
-	top: 50%;
-	
+	left: 0;
+	right: 0;
+	text-align:center;
+	top: 46%;	
 	font-family: Raleway;
 	font-style: normal;
 	font-weight: 500;
@@ -71,12 +99,54 @@ nav a:hover::before {
 	text-align: center;
 	letter-spacing: 0.2em;
 	color: #ffff;
-	
 }
 
-#second-page {
-	background: linear-gradient(171.18deg, #202E74 2.11%, rgba(102, 110, 150, 0.55) 43.19%, #B0B4C8 53.93%);
-	height: 100vh;
-	width: 200vh;
-
+.title_bio {
+	padding-top: 5px;	
+	font-family: Raleway;
+	font-style: normal;
+	line-height: normal;
+	font-size: 35px;
+	letter-spacing: 0.2em;
+	color: #ffff;
+	text-align: center;
 }
+
+.title_bio:last-child {
+	margin-left: 10px;
+}
+
+.body_bio {	
+	font-family: Raleway;
+	font-style: normal;
+	line-height: normal;
+	font-size: 14px;
+	letter-spacing: 0.2em;
+	color: #ffff;
+	text-align: center;
+	width: 250px;
+	line-height: 40px;
+	margin: 0 auto;
+}
+
+#container {
+	padding-top: 60px;
+	position: absolute;
+	width: 100%;
+	left: 13%;
+}
+
+.squares {
+	width: 270px;
+	margin-right: 10%;
+	height: 250px;
+	float: left;
+	background-color: #313249;
+	border-radius: 30px;
+}
+
+
+
+
+
+
