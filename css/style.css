@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	width: 70%;
 	overflow-x: hidden;
 	background-color: #B0B4C8;
 	font-family: 'Raleway', sans-serif;
@@ -124,26 +125,61 @@ nav a:hover::before {
 	letter-spacing: 0.2em;
 	color: #ffff;
 	text-align: center;
-	width: 250px;
+	width: 260px;
 	line-height: 40px;
 	margin: 0 auto;
 }
 
-#container {
+#columns {
+	position: relative;
+}
+
+#columns .container {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	align-items: stretch;
 	padding-top: 60px;
-	position: absolute;
-	width: 100%;
-	left: 13%;
 }
 
 .squares {
-	width: 270px;
-	margin-right: 10%;
+	width: 290px;
 	height: 250px;
-	float: left;
 	background-color: #313249;
 	border-radius: 30px;
 }
+
+/*
+#mascot {
+	transform: matrix(-0.81, 0.59, 0.59, 0.81, 0, 0);
+	width: 45%;
+	margin-top: 0%;
+	margin-right: -12%;
+}
+*/
+
+
+#announcements .container {
+	position: relative;
+	display: flex;
+	margin-top: 100px;
+}
+
+.title_a {
+	font-family: Raleway;
+	font-style: normal;
+	line-height: normal;
+	font-size: 50px;
+	letter-spacing: 0.2em;
+	color: #ffff;
+	width: 250px;
+	line-height: 40px;
+}
+
+.a_body .container {
+	width: 100%;
+}
+
 
 
 
