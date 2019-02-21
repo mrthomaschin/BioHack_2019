@@ -63,9 +63,6 @@ nav a:hover::before {
 
 
 #second-page {
-/*
-	background-color: #0A131C;
-*/
 	background-color: #212D3A;
 	height: 200vh;
 	width: 100vw;
@@ -150,8 +147,24 @@ nav a:hover::before {
 }
 
 #announcements {
+	position: relative;
+	padding-top: 150px;
+	display: flex;
+	flex-direction: row;
+}
 
-	padding-top: 300px;
+#announcements .x {
+	width: 70vw;
+	height: 35vh;
+	border-top: 2px solid white;
+	border-right: 2px solid white;
+}
+
+#announcements .y {
+	width: 30vw;
+	height: 35vh;
+	border-bottom: 2px solid white;
+
 }
 
 .title_a {
@@ -161,31 +174,50 @@ nav a:hover::before {
 	font-size: 60px;
 	letter-spacing: 0.2em;
 	color: #ffff;
-	width: 250px;
-	line-height: 40px;
-	margin-top: -50px;
-	margin-left: 180px;
-
+	text-align: center;
+	margin-top: -70px;
 }
 
-#announcements .container:first-child {
+.sub_title {
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: bold;
+	line-height: normal;
+	font-size: 24px;
+	letter-spacing: 0.2em;
+	color: #ffff;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.body_a {
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	letter-spacing: 0.2em;
+	color: #ffff;
+	width: 42vw;
+	line-height: 44px;
+	text-align: center;
+	margin-left: 210px;
+}
+
+
+
+/*
+.box2 {
 	position: relative;
-	float: left;
-	width: 70vw;
-	height: 35%;
-	border-top: 2px solid white;
-	border-right: 2px solid white;
-}
-
-#announcements .container:last-child {
-	position: absolute;
-	right: 0;
-	width: 29.2vw;
+	float: right;
+	width: 30%;
 	height: 35%;
 	border-bottom: 2px solid white;
-	z-index: 1;
-}
 
+
+}
+*/
+
+/*
 .logo_v {
 	position: absolute;
 	right:-55%;
@@ -213,23 +245,20 @@ nav a:hover::before {
 	font-style: normal;
 	line-height: normal;
 	font-size: 16px;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.2emx;
 	color: #ffff;
 	width: 48vw;
 	line-height: 40px;
 	margin-left: 180px;
 }
 
-.box {
-	position: relative;
-
+#agenda .box {
+	position: absolute;
+	width: 50%;
+	height: 20%;
+	border-bottom: 2px solid white;
 }
 
-.trees {
-	width: 30vw;
-	transform: matrix(-1,0,0,1,0,0);
-	
-}
 
 
 
