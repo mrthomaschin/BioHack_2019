@@ -52,7 +52,7 @@ nav a:hover::before {
 }
 
 #main-bg {
-	background-image: url("../img/background.jpg");
+	background-image: url("../img/background3.jpg");
 	background-attachment: fixed;
 	background-position: center; 
 	background-repeat: no-repeat;
@@ -63,7 +63,7 @@ nav a:hover::before {
 
 
 #second-page {
-	background-color: #212D3A;
+	background-color: #593C6B;
 	height: 200vh;
 	width: 100vw;
 }
@@ -129,45 +129,119 @@ nav a:hover::before {
 
 #columns {
 	position: relative;
-}
-
-#columns .container {
 	display: flex;
-	flex-flow: row nowrap;
 	justify-content: space-evenly;
-	align-items: stretch;
-	padding-top: 60px;
+	flex-direction: row;
+	padding-top: 80px;
 }
 
 .squares {
-	width: 290px;
-	height: 250px;
-	background-color: #313249;
+	width: 20vw;
+	height: 30vh;
+	background-color: #B987BD;
 	border-radius: 30px;
+/*
+	margin: 20px;
+*/
 }
 
-#announcements {
+#announcements .container {	
 	position: relative;
-	padding-top: 150px;
-	display: flex;
-	flex-direction: row;
+	width: 50vw;
+	padding-top: 100px;
+	float: left;
+/*
+	margin-left: -20px;
+*/
+
 }
 
-#announcements .x {
-	width: 70vw;
-	height: 35vh;
+
+#announcements .row:first-child {
 	border-top: 2px solid white;
 	border-right: 2px solid white;
-}
-
-#announcements .y {
-	width: 30vw;
-	height: 35vh;
 	border-bottom: 2px solid white;
-
+	border-radius: 0px 30px 30px 0px;
 }
 
-.title_a {
+
+#announcements .row .title {
+	font-family: Raleway;
+	font-style: normal;
+	line-height: normal;
+	font-size: 60px;
+	letter-spacing: 0.2em;
+	color: #ffff;
+	padding-top: 10px;
+	text-align: right;
+	width: 100%;
+}
+
+#announcements .row .body {
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	letter-spacing: 0.2em;
+	color: #ffff;
+	line-height: 40px;
+	margin-left: 120px;
+	width: 110%;
+	padding-top: 10px;
+	float: left;
+}
+
+#announcements .row:last-child {
+	width: 30vw;
+	height: 30vh;
+	float: left;
+	border: 2px solid white;	
+}
+
+
+
+
+
+
+
+.virus {
+	position: absolute;
+	margin-left: 100%;
+
+/*
+	
+*/
+	transform: matrix(-0.93, 0.38, 0.38, 0.93, 0, 0);
+	background: #5A4A75;
+	border-radius: 40px;
+}
+
+.virus>img {
+	float: right;
+	width: 10vw;
+}
+
+#agenda {
+	padding-top: 20vh;
+	position: relative;
+	display: flex;
+	float: right;
+}
+
+#agenda .x {
+	width: 30vw;
+	height: 45vh;
+	border-bottom: 2px solid white;
+}
+
+#agenda .y {
+	width: 70vw;
+	height: 45vh;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+}
+
+#agenda .y .title {
 	font-family: Raleway;
 	font-style: normal;
 	line-height: normal;
@@ -178,87 +252,21 @@ nav a:hover::before {
 	margin-top: -70px;
 }
 
-.sub_title {
-	font-family: Raleway;
-	font-style: normal;
-	font-weight: bold;
-	line-height: normal;
-	font-size: 24px;
-	letter-spacing: 0.2em;
-	color: #ffff;
-	text-align: center;
-	margin-top: 15px;
-}
-
-.body_a {
-	font-family: Raleway;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 20px;
-	letter-spacing: 0.2em;
-	color: #ffff;
-	width: 42vw;
-	line-height: 44px;
-	text-align: center;
-	margin-left: 210px;
-}
-
-
-
-/*
-.box2 {
-	position: relative;
+.virus2 {
+	position: absolute;
 	float: right;
-	width: 30%;
-	height: 35%;
-	border-bottom: 2px solid white;
-
-
-}
-*/
-
-/*
-.logo_v {
-	position: absolute;
-	right:-55%;
-	bottom: -10%;
-	width: 70%;
-	transform: matrix(-0.81, 0.59, 0.59, 0.81, 0, 0);
+	width: 24vw;
+	height: 45vh;
+	transform: matrix(-0.93, 0.38, 0.38, 0.93, 0, 0);
+	background: #5A4A75;
+	border-radius: 40px;
 }
 
-.sub_title {
-	font-family: Raleway;
-	font-style: normal;
-	font-weight: bold;
-	line-height: normal;
-	font-size: 24px;
-	letter-spacing: 0.2em;
-	color: #ffff;
-	width: 60vw;
-	line-height: 40px;
-	margin-left: 180px;
-	margin-top: 20px;
-}
+.virus2>img {
+	width: 24vw;
+	transform: matrix(-1, 0, 0, 1, 0, 0);
 
-.body_a {
-	font-family: Raleway;
-	font-style: normal;
-	line-height: normal;
-	font-size: 16px;
-	letter-spacing: 0.2emx;
-	color: #ffff;
-	width: 48vw;
-	line-height: 40px;
-	margin-left: 180px;
 }
-
-#agenda .box {
-	position: absolute;
-	width: 50%;
-	height: 20%;
-	border-bottom: 2px solid white;
-}
-
 
 
 
