@@ -145,19 +145,17 @@ nav a:hover::before {
 */
 }
 
-#announcements .container {	
+#announcements {
 	position: relative;
-	width: 50vw;
+	display: flex;
+	flex-direction: row;
 	padding-top: 100px;
-	float: left;
-/*
-	margin-left: -20px;
-*/
-
 }
 
 
-#announcements .row:first-child {
+#announcements .row {
+	float: left;
+	width: 50vw;
 	border-top: 2px solid white;
 	border-right: 2px solid white;
 	border-bottom: 2px solid white;
@@ -169,15 +167,32 @@ nav a:hover::before {
 	font-family: Raleway;
 	font-style: normal;
 	line-height: normal;
-	font-size: 60px;
+	font-size: 70px;
 	letter-spacing: 0.2em;
 	color: #ffff;
 	padding-top: 10px;
+	padding-right: 12px;
 	text-align: right;
 	width: 100%;
 }
 
-#announcements .row .body {
+#a-content {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+}
+
+#a-content .row:first-child {
+	padding-left: 40px;
+	width: 50%;
+}
+
+#a-content .row:last-child {
+	width: 50%;
+
+}
+
+#a-content .row .body {
 	font-family: Raleway;
 	font-style: normal;
 	font-weight: 300;
@@ -185,42 +200,55 @@ nav a:hover::before {
 	letter-spacing: 0.2em;
 	color: #ffff;
 	line-height: 40px;
-	margin-left: 120px;
-	width: 110%;
 	padding-top: 10px;
-	float: left;
 }
 
-#announcements .row:last-child {
-	width: 30vw;
-	height: 30vh;
-	float: left;
-	border: 2px solid white;	
-}
-
-
-
-
-
-
-
-.virus {
+.row .square {
 	position: absolute;
-	margin-left: 100%;
-
-/*
-	
-*/
-	transform: matrix(-0.93, 0.38, 0.38, 0.93, 0, 0);
-	background: #5A4A75;
+	margin-left: 200px;
+	width: 300px;
+	height: 300px;
 	border-radius: 40px;
+	background: #B987BD;
+	transform: matrix(-0.96, -0.26, -0.26, 0.96, 0, 0);
 }
 
-.virus>img {
-	float: right;
-	width: 10vw;
+.square>img {
+	width: 100%;
 }
 
+#agenda {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	padding-top: 200px;
+}
+
+#agenda .row:first-child {
+	width:30%;
+
+}
+#agenda .row:last-child {
+	width: 80%;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+	border-bottom: 2px solid white;
+	border-radius: 30px 0px 0px 30px;
+}
+
+#agenda .title {
+	font-family: Raleway;
+	font-style: normal;
+	line-height: normal;
+	font-size: 60px;
+	letter-spacing: 0.2em;
+	color: #ffff;
+	padding-top: 10px;
+	padding-left: 16px;
+	text-align: left;
+	width: 100%;
+}
+/*
 #agenda {
 	padding-top: 20vh;
 	position: relative;
@@ -273,4 +301,5 @@ nav a:hover::before {
 
 
 
+*/
 
