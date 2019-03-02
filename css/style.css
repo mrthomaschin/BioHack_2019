@@ -225,9 +225,9 @@ nav a:hover::before {
 }
 
 #agenda .row:first-child {
-	width:30%;
-
+	width: 22%;
 }
+
 #agenda .row:last-child {
 	width: 80%;
 	border-top: 2px solid white;
@@ -240,66 +240,88 @@ nav a:hover::before {
 	font-family: Raleway;
 	font-style: normal;
 	line-height: normal;
-	font-size: 60px;
+	font-size: 65px;
 	letter-spacing: 0.2em;
 	color: #ffff;
 	padding-top: 10px;
-	padding-left: 16px;
+	padding-left: 20px;
 	text-align: left;
-	width: 100%;
 }
-/*
-#agenda {
-	padding-top: 20vh;
+
+#f-content {
 	position: relative;
 	display: flex;
-	float: right;
+	flex-direction: row;
+	padding-top: 20px;
 }
 
-#agenda .x {
-	width: 30vw;
-	height: 45vh;
-	border-bottom: 2px solid white;
+
+#f-content .row:first-child {
+	width: 22%;
 }
 
-#agenda .y {
-	width: 70vw;
-	height: 45vh;
-	border-top: 2px solid white;
-	border-left: 2px solid white;
+#f-content .row:last-child {
+	width: 80%;
 }
 
-#agenda .y .title {
+.collapsible {
 	font-family: Raleway;
 	font-style: normal;
 	line-height: normal;
-	font-size: 60px;
+	font-size: 30px;
+	background-color: #593C6B;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+	border: 2px solid #B987BD;
+	border-radius: 30px;
+	width: 500px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.content {
+	margin-left: 20px;
+/*
+	width: 20%;
+*/
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+	padding-top: 8px;
+}
+
+.content>p {	
+	font-family: Raleway;
+	font-style: normal;
+	line-height: normal;
+	font-size: 16px;
 	letter-spacing: 0.2em;
 	color: #ffff;
-	text-align: center;
-	margin-top: -70px;
+	text-align: left;
 }
 
-.virus2 {
+#faq_list {
+	padding: 0;
+}
+
+#faq_list>li {
+	margin-right: 200px;
+	width: 300px;
+
+}
+
+/*
+#faq_list>li:before {
+	content: "+";
 	position: absolute;
-	float: right;
-	width: 24vw;
-	height: 45vh;
-	transform: matrix(-0.93, 0.38, 0.38, 0.93, 0, 0);
-	background: #5A4A75;
-	border-radius: 40px;
+	
 }
-
-.virus2>img {
-	width: 24vw;
-	transform: matrix(-1, 0, 0, 1, 0, 0);
-
-}
-
-
-
-
-
-
+* add plus and minus transition
 */
+
+
+
+
+
 

@@ -70,11 +70,64 @@
 			</div>
 			
 			<div id="agenda">
-				<div class="row">
-
-				</div>
+				<div class="row"></div>
 				<div class="row">
 					<h1 class="title">Frequently Asked Questions</h1>
+				</div>
+			</div>
+			
+			<div id="f-content">
+				<div class="row"></div>
+				<div class="row">
+					<ul id="faq_list" style="list-style-type:none;">
+						<li>
+							<button class="collapsible">What is a hackathon?</button>
+							<div class="content">
+								<p>if you know you know man yeet leet wheat beat sheet</p>
+							</div>
+						</li>
+						<li>
+							<button class="collapsible">Can I attend?</button>
+							<div class="content">
+								<p>If you are an undergraduate UCR student who is curious about hacking</p>
+							</div>
+						</li>
+						<li>
+							<button class="collapsible">Do I need to be a CS major?</button>
+							<div class="content">
+								<p>If you are an undergraduate UCR student who is curious about hacking</p>
+							</div>
+						</li>
+					</ul>
+					<ul id="faq_list2" style="list-style-type:none;">
+						<li>
+							<button class="collapsible">How do I register?</button>
+							<div class="content">
+								<p>if you know you know man yeet leet wheat beat sheet</p>
+							</div>
+						</li>
+					
+					
+					</ul>
+					
+					
+					
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 				</div>
 			
 			</div>
@@ -91,6 +144,9 @@
 		
 		</div>
 		
+		
+		
+		<script src="js/main.js"></script>
 	</body>
 
 
