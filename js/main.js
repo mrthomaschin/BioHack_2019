@@ -1,23 +1,21 @@
-    $(document).ready(function() {
+//~ $(document).ready(function() {
                 
-                var documentEl = $(document),
-                    fadeElem = $('.row');
+                //~ var documentEl = $(document),
+                    //~ fadeElem = $('.row');
                 
                 
-                documentEl.on('scroll', function() {
-                    var currScrollPos = documentEl.scrollTop();
+                //~ documentEl.on('scroll', function() {
+                    //~ var currScrollPos = documentEl.scrollTop();
                     
-                    fadeElem.each(function() {
-                        var $this = $(this),
-                            elemOffsetTop = $this.offset().top;
-                        if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/400);
-                    }); 
-                });
+                    //~ fadeElem.each(function() {
+                        //~ var $this = $(this),
+                            //~ elemOffsetTop = $this.offset().top;
+                        //~ if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/400);
+                    //~ }); 
+                //~ });
                 
-            });
+//~ });
         
-
-
 function reveal() {
 	var coll = document.getElementsByClassName("collapsible");
 	var i;
@@ -36,4 +34,57 @@ for (i = 0; i < coll.length; i++) {
 	
 }
 
+'use strict';
+$(function() {
+	var width = 680;
+	var animationSpeed = 1000;
+	var pause = 1000;
+	var currentSlide = 1;
+	var interval;
+	
+	var $slider = $('#slider');
+	var $slideContainer = $slider.find('.slides');
+	var $slides = $slideContainer.find('.slide');
+	
+	$(".next").click(function() {
+		if (currentSlide < 5){
+		$slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function(){
+			++currentSlide;
+		});
+	}	
+		
+	});
+	
+	$(".prev").click(function() {
+		if (currentSlide > 1){
+		$slideContainer.animate({'margin-left': '+='+width}, animationSpeed, function(){
+			currentSlide--;
+		});
+	}
+		
+	});
+	
+	
+	
+	//~ function startSlider(){
+		//~ interval = setInterval(function() {
+		//~ $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function(){
+			//~ currentSlide++;
+			//~ if(currentSlide === $slides.length-1) {
+				//~ stopSlider();
+				currentSlide = 1;
+				$slideContainer.css('margin-left', 0);
+			//~ }
+		//~ });
+	//~ }, pause);
+	//~ }
+	
+	//~ function stopSlider() {
+		//~ clearInterval(interval);
+	//~ }
+	
+	//~ $slider.on('mouseenter', stopSlider).on('mouseleave',startSlider);
+	
+	//~ //startSlider();
+});
 
