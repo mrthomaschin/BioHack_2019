@@ -37,8 +37,8 @@ for (i = 0; i < coll.length; i++) {
 'use strict';
 $(function() {
 	var width = 680;
-	var animationSpeed = 1000;
-	var pause = 1000;
+	var animationSpeed = 750;
+	var pause = 0;
 	var currentSlide = 1;
 	var interval;
 	
@@ -48,17 +48,19 @@ $(function() {
 	
 	$(".next").click(function() {
 		if (currentSlide < 5){
+		++currentSlide;
 		$slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function(){
-			++currentSlide;
 		});
 	}	
 		
 	});
 	
 	$(".prev").click(function() {
-		if (currentSlide > 1){
+			--currentSlide;
+		
+		if (currentSlide >= 1){
+	
 		$slideContainer.animate({'margin-left': '+='+width}, animationSpeed, function(){
-			currentSlide--;
 		});
 	}
 		
