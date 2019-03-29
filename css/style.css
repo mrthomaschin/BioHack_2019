@@ -297,11 +297,50 @@ a:hover {
 
 }
 
+.button-container {
+	margin: 48px;
+}
+
+.button {
+  border-radius: 8px;
+  font-family: Raleway;
+  letter-spacing: 0.12px;
+  padding: 14px 64px 16px; 
+  opacity: 1.0;
+  transition: 0.25s;
+}
+
+  .button--primary {
+    background-color: #fff;
+    color: #ab86ba;
+    font-size: 26px; 
+  }
+
+    .button--primary:hover, .button--primary:focus {
+      background-color: #926ea0;
+      opacity: 0.8;
+      color: #fff;
+    }
+
 /* media queries */
 @media screen and (min-width: 320px) and (max-width: 480px) {
+
+nav li {
+display: inline-block;
+margin-left: 20px;
+margin-right: 20px;
+padding-top: 20px;
+position: relative; 
+}
 	
 #main-hero {
 	background: linear-gradient(180deg, #B987BD 0%, rgba(185, 135, 189, 0) 100%);
+	padding: 24px;
+}
+
+#main-title {
+	padding-top: 200px;
+	width: 100%;
 }
 
 .title {
@@ -359,14 +398,4 @@ a:hover {
 	width: 100%;
 }
 
-
-	
 }
-
-
-
-
-
-
-
-
