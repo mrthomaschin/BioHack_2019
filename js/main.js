@@ -36,8 +36,8 @@ for (i = 0; i < coll.length; i++) {
 
 'use strict';
 $(function() {
-	var width = 680;
-	var animationSpeed = 750;
+	var width = $( document ).width()/2.24;
+	var animationSpeed = 550;
 	var pause = 0;
 	var currentSlide = 1;
 	var interval;
