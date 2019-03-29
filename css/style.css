@@ -49,12 +49,13 @@ nav a:hover::before {
 }
 
 a {
-	color: #8E88A6;
+	color: #ffffffd1;
 	text-decoration: none;
+	transition: 0.2s;
 }
 
 a:hover {
-	color: #636989;
+	color: #7c7695;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -62,7 +63,7 @@ a:hover {
 #main-hero {
 	background-image: url("../img/back.png");
 	background-attachment: fixed;
-	background-position: center; 
+	background-position: top, center; 
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
@@ -285,8 +286,13 @@ a:hover {
 	margin-top: 15px;
 	width: 80px;
 	border-radius: 10px;
-
+	transition: 0.2s;
 }
+
+.prev:hover {
+	background-color: #816284;
+}
+
 .next {
 	background-color: #B987BD;
 	border: 2px solid white;
@@ -294,7 +300,11 @@ a:hover {
 	margin-left: 650px;
 	width: 80px;
 	border-radius: 10px;
+	transition: 0.2s;
+}
 
+.next:hover {
+	background-color: #816284;
 }
 
 .button-container {
