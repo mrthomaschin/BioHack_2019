@@ -89,12 +89,15 @@ label {
         text-align: center;
         width: 100%;
         display: none;
+        text-transform: uppercase;
+        font-weight: 600;
     }
     
     .menu a {
         display: block;
-
-        border-bottom: 1px solid #EAEAEB;
+        background-color: #ffffff69;
+        border-radius: 8px;
+        border-bottom: 2px solid #EAEAEB;
         margin: 0;
     }
     
