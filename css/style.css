@@ -142,7 +142,6 @@ a:hover {
 	font-family: Raleway;
 	font-style: normal;
 	font-weight: 500;
-	line-height: normal;
 	font-size: 40px;
 	text-align: center;
 	letter-spacing: 0.2em;
@@ -155,7 +154,7 @@ a:hover {
 }
 
 #main-title .image>img {
-	width: 40vw;
+	width: 45vw;
 }
 
 #second-page {
@@ -532,6 +531,10 @@ position: relative;
 	font-weight: 500;
 	font-size: 15px;
 	color: #ffff;
+}
+
+.date {
+	font-size: 30px;
 }
 
 }
