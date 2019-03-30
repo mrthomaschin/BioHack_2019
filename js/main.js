@@ -56,10 +56,9 @@ $(function() {
 	});
 	
 	$(".prev").click(function() {
-			--currentSlide;
 		
-		if (currentSlide >= 1){
-	
+		if (currentSlide > 1){
+		--currentSlide;
 		$slideContainer.animate({'margin-left': '+='+width}, animationSpeed, function(){
 		});
 	}
