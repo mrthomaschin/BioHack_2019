@@ -18,7 +18,7 @@ body,html {
 }
 
 .menu a {
-	color: #ffff;
+	color: #5f505ea3;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 900;
@@ -57,7 +57,7 @@ body,html {
 .menu a {
     clear: right;
     text-decoration: none;
-    color: grey;
+    color: #5a505ea3;
     margin: 0 10px;
     line-height: 70px;
 }
@@ -93,6 +93,7 @@ label {
     
     .menu a {
         display: block;
+
         border-bottom: 1px solid #EAEAEB;
         margin: 0;
     }
@@ -114,22 +115,19 @@ a {
 }
 
 a:hover {
-	color: #7c7695;
+	color: rgba(255, 255, 255, 0.7);
 	text-decoration: none;
 	cursor: pointer;
 }
 
 #main-hero {
 	background-image: url("../img/back.png");
-/*
 	background-attachment: fixed;
-*/
 	background-position: top left; 
 	background-origin: content-box;
 	-moz-box-shadow: inset 1px 4px 128px -12px rgba(0, 0, 0, .4);
-  -webkit-box-shadow: inset 1px 4px 128px -12px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 1px 4px 128px -12px rgba(0, 0, 0, .4);
 	box-shadow: inset 1px 4px 128px -12px rgba(0, 0, 0, .4);
-	background-position: top, center; 
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 115vh;
@@ -149,7 +147,7 @@ a:hover {
 }
 
 #main-title {
-	padding-top: 55vh;
+	padding-top: 40vh;
 	width: 100%;
 }
 
@@ -253,6 +251,11 @@ a:hover {
 	text-align: left;
 	width: 100%;
 	box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+	transition: 0.15s
+}
+
+.collapsible:hover {
+	color: rgba(255,255,255, 0.5);
 }
 
 .content {
@@ -282,6 +285,11 @@ a:hover {
 	padding: 10px 10px 0px 20px;
 }
 
+.sponsor {
+	transform: scale(1.0);
+	transition: all ease-in-out 200ms;
+}
+
 .sponsor:hover {
 	transform: scale(1.1);
 	transition: all ease-in-out 300ms;
@@ -290,7 +298,7 @@ a:hover {
 .sponsor-title {
 	font-family: Raleway;
 	font-size: 20px;
-	color: white;
+	color: #2a2538;
 	display: block;
 	width: 100%;
 	border: 2px solid white;
@@ -345,7 +353,7 @@ a:hover {
 	background-color: #816284;
 }
 
-/*
+
 .button-container {
 	margin: 48px;
 }
@@ -370,7 +378,7 @@ a:hover {
       opacity: 0.8;
       color: #fff;
     }
-
+/*
 .carousel {
   width: 100%;
 }
