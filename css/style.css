@@ -124,6 +124,11 @@ a:hover {
 /*
 	background-attachment: fixed;
 */
+	background-position: top left; 
+	background-origin: content-box;
+	-moz-box-shadow: inset 1px 4px 128px -12px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: inset 1px 4px 128px -12px rgba(0, 0, 0, .4);
+	box-shadow: inset 1px 4px 128px -12px rgba(0, 0, 0, .4);
 	background-position: top, center; 
 	background-repeat: no-repeat;
 	background-size: cover;
