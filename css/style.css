@@ -19,12 +19,10 @@ body,html {
 
 .menu a {
 	color: #f2d3ffdb;
-	text-shadow: 2px 2px 20px #00000045;
+	font-family: Raleway;
 	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: 900;
-	font-size: 20px;
-	letter-spacing: 0.2em;
+	font-weight: 500;
+	font-size: 22px;
 }
 
 .menu a::before {
@@ -131,6 +129,9 @@ a:hover {
 		rgba(22, 22, 22, 0.1), 
 		rgba(22, 22, 22, 0.1)), 
 		url("../img/back.png");
+	-moz-box-shadow: inset 0px 80px 128px -48px rgba(0, 0, 0, .3);
+  	-webkit-box-shadow: inset 0px 80px 128px -48px rgba(0, 0, 0, .3);
+	box-shadow: inset 0px 80px 128px -48px rgba(0, 0, 0, .3);
 	background-attachment: fixed;
 	background-position: top left; 
 	background-origin: content-box;
@@ -222,9 +223,6 @@ a:hover {
 	font-weight: 300;
 	font-size: 20px;
 	color: #ffff;
-	padding-left: 12px;
-	padding-right: 12px;
-	padding-bottom: 12px;
 }
 
 .sub-title {
@@ -341,41 +339,81 @@ a:hover {
 	transform: rotate(17deg);
 }
 
-.prev {
-	background-color: #B987BD;
-	border: 2px solid white;
-	margin-top: 15px;
+.prev, .prev-ppt {
+	background-color: #f0d8f3;
+	color: #593b6b;
+	border: 2px solid #ffffff9c;
+	margin-top: 25px;
 	margin-right: 35vw;
 	width: 10vw;
-	border-radius: 10px;
+	max-width: 100px;
+	border-radius: 16px;
 	transition: 0.2s;
 }
 
-.prev:hover {
-	background-color: #816284;
+.prev:hover, .prev-ppt:hover {
+	background-color: #926ea0;
+	opacity: 0.8;
+	color: #fff;
 }
 
-.prev:focus {
+.prev:focus, .prev-ppt:focus {
 	outline: none;
 }
 
-.next {
-	background-color: #B987BD;
-	border: 2px solid white;
-	margin-top: 15px;
+.next, .next-ppt {
+	background-color: #f0d8f3;
+	color: #593b6b;
+	border: 2px solid #ffffff9c;
+	margin-top: 25px;
 	width: 10vw;
-	border-radius: 10px;
+	max-width: 100px;
+	border-radius: 16px;
 	transition: 0.2s;
 }
 
-.next:hover {
-	background-color: #816284;
+.next:hover, .next-ppt:hover {
+	background-color: #926ea0;
+	opacity: 0.8;
+	color: #fff;
 }
 
-.next:focus {
+.next:focus, .next-ppt:focus {
 	outline: none;
 }
 
+/* Fading animation */
+.slideshow-container {
+  max-width: 1000px;
+  position: inherit;
+  margin: auto;
+}
+
+.slides2 {
+	display: none;
+	height: 400px;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+.fade:not(.show) {
+	opacity: 1;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.2} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.2} 
+  to {opacity: 1}
+}
 
 .button-container {
 	margin: 48px;
@@ -413,7 +451,7 @@ a:hover {
 #slider {
 	overflow:hidden;
 	width: 100%;
-	height: 470px;
+	height: 490px;
 }
 .slides {
 	display: block;
@@ -429,17 +467,19 @@ a:hover {
 
 .slide-gap {
 	background-color: #B987BD;
-	border-radius: 20px;
+	border-radius: 16px;
 	height: 425px;
-	box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
-	border: 2px solid white;
+	box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
+	border: 2px solid #ffffff9c;
+	padding-left: 8px;
+	padding-right: 8px;
 }
 
 .logo {
-	font-size: 15vw; 
+	font-size: 8vw; 
 	color: #834488; 
-	padding-top: 10px; 
-	padding-bottom: 10px;"
+	padding-top: 30px; 
+	padding-bottom: 20px;
 }
 
 .slide-show {
@@ -541,7 +581,7 @@ position: relative;
 	font-size: 65px; 
 	color: #834488; 
 	padding-top: 10px; 
-	padding-bottom: 10px;"
+	padding-bottom: 10px;
 }
 
 .sub-text {
