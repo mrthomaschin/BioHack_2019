@@ -350,6 +350,10 @@ a:hover {
 	background-color: #816284;
 }
 
+.prev:focus {
+	outline: none;
+}
+
 .next {
 	background-color: #B987BD;
 	border: 2px solid white;
@@ -361,6 +365,10 @@ a:hover {
 
 .next:hover {
 	background-color: #816284;
+}
+
+.next:focus {
+	outline: none;
 }
 
 
