@@ -1,1 +1,3 @@
-# BioHack_2019
+# BioHack 2019 |UC Riverside
+
+![BioHack Logo](img/bannerlogo.png)
