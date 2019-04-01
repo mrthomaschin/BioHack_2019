@@ -139,7 +139,7 @@ a:hover {
 	background-origin: content-box;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 115vh;
+	height: 100vh;
 	width: 100vw;
 }
 
@@ -160,7 +160,7 @@ a:hover {
 }
 
 #main-title .image>img {
-	padding-top: 100px;
+	/*padding-top: 100px;*/
 	width: 45vw;
 }
 
@@ -171,7 +171,7 @@ a:hover {
 
 #third-page {
 	background-color: #593C6B;
-	padding: 6%;
+	padding: 4%;
 }
 
 #fourth-page {
@@ -232,7 +232,7 @@ a:hover {
 	font-family: Raleway;
 	font-weight: 500;
 	font-size: 70px;
-	letter-spacing: 0.1em;
+	/*letter-spacing: 0.1em;*/
 	color: #ffff;
 	text-shadow: 4px 3px 0 #7A7A7A;
 }
@@ -246,8 +246,8 @@ a:hover {
 
 .a-virus {
 	transform: rotate(-18deg);
-	width: 100%; 
-	padding-top: 20px;
+	width: 75%; 
+	/*padding-top: 20px;*/
 }
 
 .collapsible {
@@ -338,7 +338,7 @@ a:hover {
 }
 
 .dna {
-	width: 110%;
+	width: 100%;
 	transform: rotate(17deg);
 }
 
