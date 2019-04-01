@@ -199,7 +199,7 @@ a:hover {
 	padding-bottom: 4%;
 }
 
-#eight-page {
+#eighth-page {
 	background-color: #CBBCD2;
 	padding: 2%;
 }
@@ -637,6 +637,17 @@ a:hover {
 	padding-right: 9px;
 }
 
+#sixth-page {
+	display: none;
+}
+
+#seventh-page {
+	background-color: #CBBCD2
+}
+
+#eighth-page {
+	background-color: #593C6B
+}
 }
 
 
