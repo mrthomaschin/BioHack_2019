@@ -500,6 +500,8 @@ a:hover {
 .slide_1 {
 	float:left;
 	width: 44.5vw;
+	padding-left: 30px; 
+	padding-right: 30px;
 }
 
 .slide-gap_1 {
@@ -518,7 +520,7 @@ a:hover {
 
 
 /* media queries */
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 310px) and (max-width: 500px) {
 
 #main-hero {
 	background: linear-gradient(180deg, #B987BD 0%, rgba(185, 135, 189, 0) 100%);
@@ -604,7 +606,7 @@ a:hover {
 }
 
 .sub-text {
-	font-size: 10px;
+	font-size: 9px;
 	color: #ffff;
 	padding-left: 6px;
 	padding-right: 6px;
@@ -638,16 +640,50 @@ a:hover {
 }
 
 #sixth-page {
-	display: none;
+	padding: 3%;
 }
 
-#seventh-page {
-	background-color: #CBBCD2
+#slider_1 {
+	overflow:hidden;
+	width: 100%;
+	height: 210px;
+}
+.slides_1 {
+	display: block;
+	width: 2000vw;
+	margin: 0;
+	padding: 0;
 }
 
-#eighth-page {
-	background-color: #593C6B
+.slide_1 {
+	width: 93vw;
+	padding-left: 10px; 
+	padding-right: 10px;
+}
+
+.ppt_img {
+	width: 100%;
+}
+
+.slide-gap_1 {
+	height: 150px;
+}
+
+.sponsor-title {
+	font-size: 14px;
+	width: 100%;
+	padding: 10px;
 }
 }
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+
+.sub-text {
+	font-size: 11px;
+}
+
+
+}
+
 
 

@@ -73,7 +73,12 @@ $(function() {
 
 'use strict';
 $(function() {
+	if (x.matches) { 
 	var width = $( document ).width()/2.256;
+	}
+	else {
+	var width = $( document ).width()/1.075;
+	}
 	var animationSpeed = 450;
 	var pause = 3000;
 	var currentSlide = 1;
@@ -82,26 +87,6 @@ $(function() {
 	var $slider = $('#slider_1');
 	var $slideContainer = $slider.find('.slides_1');
 	var $slides = $slideContainer.find('.slide_1');
-	
-	$(".next_1").click(function() {
-		if (currentSlide < 5){
-		++currentSlide;
-		$slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function(){
-		});
-	}	
-		
-	});
-	
-	$(".prev_1").click(function() {
-		
-		if (currentSlide > 1){
-		--currentSlide;
-		$slideContainer.animate({'margin-left': '+='+width}, animationSpeed, function(){
-		});
-	}
-		
-	});
-	
 	
 	
 	function startSlider(){
@@ -116,11 +101,10 @@ $(function() {
 	}, pause);
 	}
 	
-	//~ function stopSlider() {
-		//~ clearInterval(interval);
-	//~ }
-	
-	//~ $slider.on('mouseenter', stopSlider).on('mouseleave',startSlider);
 	
 	startSlider();
+	
 });
+var x = window.matchMedia("(min-width: 550px)")
+myFunction(x) 
+x.addListener(myFunction)
