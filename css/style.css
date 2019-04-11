@@ -518,6 +518,10 @@ a:hover {
 	border: 2px solid #ffffff9c;
 }
 
+#gc {
+	padding-top: 100px;
+}
+
 
 /* media queries */
 @media screen and (min-width: 310px) and (max-width: 500px) {
@@ -673,6 +677,10 @@ a:hover {
 	font-size: 14px;
 	width: 100%;
 	padding: 10px;
+}
+
+#gc {
+	padding-top: 0px;
 }
 }
 
