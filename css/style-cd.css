@@ -126,8 +126,8 @@ a:hover {
 
 #main-hero {
 	background-image: linear-gradient(
-		rgba(22, 22, 22, 0.1), 
-		rgba(22, 22, 22, 0.1)), 
+		rgba(0, 0, 0, 0.05), 
+		rgba(0, 0, 0, 0.05)), 
 		url("../img/back.png");
 	-moz-box-shadow: inset 0px 80px 128px -48px rgba(0, 0, 0, .3);
   	-webkit-box-shadow: inset 0px 80px 128px -48px rgba(0, 0, 0, .3);

@@ -17,7 +17,7 @@ var counter = setInterval(function() {
     var styledTime = days + '<span class="countdown-units"> days and </span>' + 
                     hours + '<span class="countdown-units">h </span>' + 
                     minutes + '<span class="countdown-units">m </span>' + 
-                    seconds + '<span class="countdown-units">s <br>until BioHack 2019!</span>';
+                    seconds + '<span class="countdown-units">s<br>until BioHack 2019!</span>';
 
     document.getElementById("countdown").innerHTML = styledTime;
 }, 100);
