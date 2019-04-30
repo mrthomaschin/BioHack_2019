@@ -9,7 +9,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/countdown.js"></script>
-
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 		<title>BioHack 2019 | Countdown</title>
 		<link rel="shortcut icon" type="image/png" href="img/favicon32.png"/>
@@ -21,7 +21,10 @@
 		<meta property="og:description" content="BioHack is a 12-hour health & medicine-themed hackathon hosted at University of California, Riverside.">
 		<meta property="og:type" content="website">
 		<meta property="og:image" content="img/cheeringvirus.png">
+
+
 	</head>
+
 	
 	<body>
 		<div class="nav">
@@ -45,10 +48,22 @@
 				<div class="date"> 
 					<p style="color: white;">May 18th, 2019</p>
 				</div>
-
 				<div class="countdown-container">
-					<a class="countdown-tile" id="countdown">0 days and 0h 0m 0s<br>until BioHack 2019!</a>
+					<a class="countdown-tile" id="countdown"><br></a>
 	        	</div>
+			</div>
+		</div>
+
+		<div id="schedule-page">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+					<h2 class="sub-title" align="left">Schedule</h2>
+					<p class="info-text" style="padding-top: 5px;">
+					   [Table should go here]
+					   <br><br>
+					   [Schedule image]
+					</p>
+				</div>	
 			</div>
 		</div>
 	
@@ -60,8 +75,21 @@
 		</div>
 	
 	</div>
-	
-	<script>reveal();</script>
+
+	<canvas class="bg-mask"></canvas>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		window.onload = function() {
+			Particles.init({
+				selector: '.bg-mask',
+				color: ['#a774b9'],
+				speed: 0.65,
+				sizeVariations: 7,
+			})
+		}
+	</script>
 	</body>
 
 </html>
