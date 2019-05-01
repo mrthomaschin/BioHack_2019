@@ -25,7 +25,7 @@
 
 	</head>
 
-	
+
 	<body>
 		<div class="nav">
         <label for="toggle">&#9776;</label>
@@ -39,13 +39,13 @@
 			</ul>
         </nav>
 		</div>
-		
+
 		<div id="main-hero" align="center">
 			<div id="main-title">
 				<div class="image" align="center">
 					<img class="main-logo" src="img/backuplogo.png">
 				</div>
-				<div class="date"> 
+				<div class="date">
 					<p style="color: white;">May 18th, 2019</p>
 				</div>
 				<div class="countdown-container">
@@ -56,24 +56,73 @@
 
 		<div id="schedule-page">
 			<div class="row">
-				<div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
-					<h2 class="sub-title" align="left">Schedule</h2>
-					<p class="info-text" style="padding-top: 5px;">
-					   [Table should go here]
-					   <br><br>
-					   [Schedule image]
-					</p>
-				</div>	
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<h2 class="sub-title" align="center">Schedule</h2>
+					<div class="schedule-table" align="center">
+						<h2 class="curr-time" id="clock">00:00:00 AM</h2>
+						<ul class="responsive-table">
+							<li class="table-header">
+								<div class="col col-1">Event</div>
+								<div class="col col-2">When</div>
+								<div class="col col-3">Where</div>
+								<div class="col col-4">Description</div>
+							</li>
+							<li class="table-row current">
+								<div class="col col-1" data-label="Event">Workshop1</div>
+								<div class="col col-2" data-label="When">9:00 AM - 10:00AM</div>
+								<div class="col col-3" data-label="Where">WCH 205/206</div>
+								<div class="col col-4" data-label="Description">A workshop teaching you how to attend workshops</div>
+							</li>
+							<li class="table-row">
+								<div class="col col-1" data-label="Event">Workshop2</div>
+								<div class="col col-2" data-label="When">10:00 AM - 11:00AM</div>
+								<div class="col col-3" data-label="Where">WCH 205/206</div>
+								<div class="col col-4" data-label="Description">A workshop teaching you how to attend workshops</div>
+							</li>
+							<li class="table-row">
+								<div class="col col-1" data-label="Event">Workshop3</div>
+								<div class="col col-2" data-label="When">11:00 AM - 12:00PM</div>
+								<div class="col col-3" data-label="Where">WCH 205/206</div>
+								<div class="col col-4" data-label="Description">A workshop teaching you how to attend workshops</div>
+							</li>
+							<li class="table-row">
+								<div class="col col-1" data-label="Event">Workshop4</div>
+								<div class="col col-2" data-label="When">12:00 PM - 1:00PM</div>
+								<div class="col col-3" data-label="Where">WCH 205/206</div>
+								<div class="col col-4" data-label="Description">A workshop teaching you how to attend workshops</div>
+							</li>
+						</ul>
+						</div>
+
+						<!-- Past Events -->
+						<div class="schedule-table" align="center">
+							<ul class="responsive-table">
+								<h4 class="sub-title" align="center" style="font-size: 40px; margin-top: 75px; margin-bottom: 35px;">Past Events</h2>
+								<li class="table-row past">
+									<div class="col col-1" data-label="Event">Workshop1</div>
+									<div class="col col-2" data-label="When">9:00 AM - 10:00AM</div>
+									<div class="col col-3" data-label="Where">WCH 205/206</div>
+									<div class="col col-4" data-label="Description">A workshop teaching you how to attend workshops</div>
+								</li>
+								<li class="table-row past">
+									<div class="col col-1" data-label="Event">Workshop2</div>
+									<div class="col col-2" data-label="When">10:00 AM - 11:00AM</div>
+									<div class="col col-3" data-label="Where">WCH 205/206</div>
+									<div class="col col-4" data-label="Description">A workshop teaching you how to attend workshops</div>
+								</li>
+							</ul>
+							</div>
+				</div>
 			</div>
 		</div>
-	
+
 	<div id="eighth-page">
 		<div class="social" style="text-align: center;">
 			<a class="fab fa-facebook-square" style="font-size: 40px; padding-right: 50px;" href="https://www.facebook.com/UCRBioHack/"></a>
 			<a class="fab fa-instagram" style="font-size: 40px; padding-right: 50px;" href="https://www.instagram.com/biohack_ucr/?hl=en"></a>
 			<a class="fa fa-envelope" style="font-size: 40px; font-color: #8E88A6;" href="mailto:biohack.ucr@gmail.com"></a>
 		</div>
-	
+
 	</div>
 
 	<canvas class="bg-mask"></canvas>
