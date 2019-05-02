@@ -79,6 +79,24 @@ label {
     display: none;
 }
 
+.s_img {
+	width: 20vw;
+	display: block;
+	margin: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.s_img_1 {
+	width: 10vw;
+	display: block;
+	margin: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+
 @media only screen and (max-width: 500px) {
     label {
         display: block;
@@ -247,8 +265,8 @@ a:hover {
 
 .a-virus {
 	transform: rotate(-18deg);
-	width: 75%; 
-	/*padding-top: 20px;*/
+	width: 100%; 
+	padding-top: 20px;
 }
 
 .collapsible {
@@ -680,8 +698,20 @@ a:hover {
 	padding: 10px;
 }
 
-#gc {
-	padding-top: 0px;
+.s_img {
+	width: 200px;
+	display: block;
+	margin: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.s_img_1 {
+	width: 120px;
+	display: block;
+	margin: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 }
 
