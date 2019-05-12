@@ -68,16 +68,24 @@ jQuery(document).ready(function($){
 			//create the .event-date element for each event
 			// var start12 = $(this).data('start') - 12;
 			// var end12 = $(this).data('end') - 12;
-			var start12 = convertTimeTo12($(this).data('start'))
-			var end12 = convertTimeTo12($(this).data('end'))
-			var durationLabel = '<span class="event-date">'+ start12 +' - '+ end12 +'</span>';
-			$(this).children('a').prepend($(durationLabel));
+			if ($(this).data('event') != ('event-0') && $(this).data('event') != ('event-a') && $(this).data('event') != ('event-00')) {
+					var start12 = convertTimeTo12($(this).data('start'))
+					var end12 = convertTimeTo12($(this).data('end'))
+					var durationLabel = '<span class="event-date">'+ start12 +' - '+ end12 +'</span>';
+					$(this).children('a').prepend($(durationLabel));
+				}
+
+			if ($(this).data('event') == ('event-00')) {
+				var start12 = convertTimeTo12($(this).data('start'))
+				var durationLabel = '<span class="event-date">'+ start12 +'</span>';
+				$(this).children('a').prepend($(durationLabel));
+			}
 
 			//detect click on the event and open the modal
-			$(this).on('click', 'a', function(event){
-				event.preventDefault();
-				if( !self.animating ) self.openModal($(this));
-			});
+			// $(this).on('click', 'a', function(event){
+			// 	event.preventDefault();
+			// 	if( !self.animating ) self.openModal($(this));
+			// });
 		});
 
 		//close modal window
@@ -101,8 +109,8 @@ jQuery(document).ready(function($){
 				eventHeight = self.eventSlotHeight*duration/self.timelineUnitDuration;
 
 			$(this).css({
-				top: (eventTop -1) +'px',
-				height: (eventHeight+1)+'px'
+				top: (eventTop+10) +'px',
+				height: (eventHeight-2)+'px'
 			});
 		});
 

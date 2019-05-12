@@ -9,7 +9,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/countdown.js"></script>
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/schedule-table.css">
+		<script src="js/schedule-table.js"></script>
 
 		<title>BioHack 2019 | Countdown</title>
 		<link rel="shortcut icon" type="image/png" href="img/favicon32.png"/>
@@ -31,7 +32,7 @@
         <nav class="menu">
 			<ul>
             <li><a href="https://biohackucr.com/">Home</a></li>
-            <li><a href="https://biohackucr.com/countdown.html"><span>Countdown</span></a></li>
+            <li><a href="https://biohackucr.com/countdown.html"><span style="color: white;">Countdown</span></a></li>
             <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfAISfwFFOwG4iycujnsJRUjgLjY1JAlWKaNL5bacetLt8Knw/viewform">Mentor Apps</a></li>
             <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfnCAEXq6pgYk9rDPs-TiAbWiV24DrK12OXdHzG9wOaelXbOQ/viewform">Volunteer Apps</a></li>
 			</ul>
@@ -56,96 +57,186 @@
 			<div class="row">
 				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 					<h2 class="sub-title" align="center">Schedule</h2>
-					<div class="schedule-table" align="center">
-						<!-- <h2 class="curr-time" id="clock">00:00:00 AM</h2> -->
-						<ul class="responsive-table">
-							<li class="table-header">
-								<div class="col col-1">Time</div>
-								<div class="col col-2">Event</div>
-								<div class="col col-3">location</div>
-								<div class="col col-4">Description</div>
-							</li>
-							<li class="table-row" style="margin-top: 0px;">
-								<div class="col col-1" data-label="When">8:30AM - 9:00AM</div>
-								<div class="col col-2" data-label="Event">Opening Ceremony & Team Formation</div>
-								<div class="col col-3" data-label="Where">WCH 138</div>
-								<div class="col col-4" data-label="Description"></div>
-							</li>
-							<li class="table-row">
-								<div class="col col-1" data-label="When">9:00AM</div>
-								<div class="col col-2" data-label="Event">Hacking Begins</div>
-								<div class="col col-3" data-label="Where">Winston Chung Hall</div>
-								<div class="col col-4" data-label="Description">Description</div>
-							</li>
-							<li class="table-row">
-								<div class="col col-1" data-label="When">10:00AM - 11:00AM</div>
-								<div class="col col-2" data-label="Event">City of Hope Workshop</div>
-								<div class="col col-3" data-label="Where">WCH 138</div>
-								<div class="col col-4" data-label="Description">City of Hope is a clinical research center, hospital, and medical school.</div>
-							</li>
-							<li class="table-row">
-								<div class="col col-1" data-label="When">10:00AM - 11:00AM</div>
-								<div class="col col-2" data-label="Event">Arduino Workshop</div>
-								<div class="col col-3" data-label="Where">WCH 139</div>
-								<div class="col col-4" data-label="Description">Learn how to program an Arduino</div>
-							</li>
-							<li class="table-row">
-								<div class="col col-1" data-label="When">11:00AM - 12:00PM</div>
-								<div class="col col-2" data-label="Event">App Development Workshop (Non-coding based)</div>
-								<div class="col col-3" data-label="Where">WCH 138</div>
-								<div class="col col-4" data-label="Description">Discover the fundamentals of mobile applications</div>
-							</li>
-							<li class="table-row">
-								<div class="col col-1" data-label="When">11:00AM - 12:00PM</div>
-								<div class="col col-2" data-label="Event">GitHub Workshop</div>
-								<div class="col col-3" data-label="Where">WCH 139</div>
-								<div class="col col-4" data-label="Description">Learn how to use GitHub to manage team projects</div>
-							</li>
-							<li class="table-row">
-								<div class="col col-1" data-label="When">12:00PM - 1:00PM</div>
-								<div class="col col-2" data-label="Event">Intro to Web Design Workshop</div>
-								<div class="col col-3" data-label="Where">WCH 138</div>
-								<div class="col col-4" data-label="Description">Explore the fundamentals of web design & development</div>
-							</li>
-							<li class="table-row">
-								<div class="col col-1" data-label="When">12:00PM - 1:00PM</div>
-								<div class="col col-2" data-label="Event">Google Cloud Platform w/ Genomics Workshop</div>
-								<div class="col col-3" data-label="Where">WCH 139</div>
-								<div class="col col-4" data-label="Description">Hosted by Google - Their Cloud Platform team will be demonstrating how to incorporate their powerful tools into your projects.</div>
-							</li>
-							<li class="table-row">
-								<div class="col col-1" data-label="When">1:00PM - 2:00PM</div>
-								<div class="col col-2" data-label="Event">Python Workshop</div>
-								<div class="col col-3" data-label="Where">WCH 138</div>
-								<div class="col col-4" data-label="Description">Discover how Python can be used to analyze massive sets of data over the Internet.</div>
-							</li>
-							<li class="table-row">
-								<div class="col col-1" data-label="When">1:00PM - 2:00PM</div>
-								<div class="col col-2" data-label="Event">iOS App Development Workshop</div>
-								<div class="col col-3" data-label="Where">WCH 139</div>
-								<div class="col col-4" data-label="Description">Learn how to program and deploy your own iOS app with XCode.</div>
-							</li>
-						</ul>
-						</div>
+					<div class="cd-schedule">
+						<div class="timeline">
+							<ul>
+								<li><span>8:00 AM</span></li>
+								<li><span>8:30 AM</span></li>
+								<li><span style="font-weight: 500; color: #a17baf">9:00 AM</span></li>
+								<li><span>9:30 AM</span></li>
+								<li><span>10:00 AM</span></li>
+								<li><span>10:30 AM</span></li>
+								<li><span>11:00 AM</span></li>
+								<li><span>11:30 AM</span></li>
+								<li><span>12:00 PM</span></li>
+								<li><span>12:30 PM</span></li>
+								<li><span>1:00 PM</span></li>
+								<li><span>1:30 PM</span></li>
+								<li><span>2:00 PM</span></li>
+								<li><span>2:30 PM</span></li>
+								<li><span>3:00 PM</span></li>
+								<li><span>3:30 PM</span></li>
+								<li><span>4:00 PM</span></li>
+								<li><span>4:30 PM</span></li>
+								<li><span>5:00 PM</span></li>
+								<li><span>5:30 PM</span></li>
+								<li><span>6:00 PM</span></li>
+								<li><span>6:30 PM</span></li>
+								<li><span>7:00 PM</span></li>
+								<li><span>7:30 PM</span></li>
+								<li><span>8:00 PM</span></li>
+								<li><span>8:30 PM</span></li>
+								<li><span style="font-weight: 500; color: #a17baf">9:00 PM</span></li>
+								<li><span>10:00 PM</span></li>
+								<li><span>10:30 PM</span></li>
+								<li><span>11:00 PM</span></li>
+							</ul>
+						</div> <!-- .timeline -->
 
-						<!-- Past Events -->
-						<!-- <div class="schedule-table" align="center">
-							<ul class="responsive-table">
-								<h4 class="sub-title" align="center" style="font-size: 40px; margin-top: 75px; margin-bottom: 35px;">Past Events</h2>
-								<li class="table-row past">
-									<div class="col col-1" data-label="Event">Past Workshop1</div>
-									<div class="col col-2" data-label="When">9:00 AM - 10:00AM</div>
-									<div class="col col-3" data-label="Where">WCH 205/206</div>
-									<div class="col col-4" data-label="Description">Desc. 1</div>
+						<!--
+						Event colors/shapes are defined by 'data-event'.
+						event-a, event-00, and event-0 are unique to distinguish the
+						beginning of the hackathon
+						-->
+
+						<div class="events">
+							<ul>
+								<li class="events-group">
+									<div class="top-info"><span>WCH 138</span></div>
+									<ul>
+
+
+										<li class="single-event" data-start="8:30" data-end="9:00" data-content="event-primary" data-event="event-a">
+											<a href="#0">
+												<em class="event-name">Opening Ceremony/Team Formation</em>
+											</a>
+										</li>
+
+										<li class="single-event" data-start="9:00" data-end="9:30" data-content="event-primary" data-event="event-00">
+											<a href="#0">
+												<em class="event-name"></em>
+											</a>
+										</li>
+
+										<li class="single-event" data-start="10:00" data-end="11:00" data-content="event-workshop" data-event="event-2">
+											<a href="#0">
+												<em class="event-name">City of Hope Workshop</em>
+											</a>
+										</li>
+
+										<li class="single-event" data-start="11:00" data-end="12:00" data-content="event-workshop" data-event="event-2">
+											<a href="#0">
+												<em class="event-name">App Development Workshop (Non-coding based)</em>
+											</a>
+										</li>
+
+										<li class="single-event" data-start="12:00" data-end="13:00" data-content="event-workshop" data-event="event-2">
+											<a href="#0">
+												<em class="event-name">Web Design with Firebase Workshop</em>
+											</a>
+										</li>
+
+										<li class="single-event" data-start="13:00" data-end="14:00" data-content="event-workshop" data-event="event-2">
+											<a href="#0">
+												<em class="event-name">Python Workshop</em>
+											</a>
+										</li>
+
+
+									</ul>
 								</li>
-								<li class="table-row past">
-									<div class="col col-1" data-label="Event">Past Workshop2</div>
-									<div class="col col-2" data-label="When">10:00 AM - 11:00AM</div>
-									<div class="col col-3" data-label="Where">WCH 205/206</div>
-									<div class="col col-4" data-label="Description">Desc. 2</div>
+
+								<li class="events-group">
+									<div class="top-info"><span>WCH 139</span></div>
+									<ul>
+
+										<li class="single-event" data-start="9:00" data-end="9:30" data-content="event-primary" data-event="event-0">
+											<a href="#0">
+												<em class="event-name">Hacking Begins</em>
+											</a>
+										</li>
+
+										<li class="single-event" data-start="10:00" data-end="11:00" data-content="event-workshop" data-event="event-2">
+											<a href="#0">
+												<em class="event-name">Arduino Workshop</em>
+											</a>
+										</li>
+
+										<li class="single-event" data-start="11:00" data-end="12:00" data-content="event-workshop" data-event="event-2">
+											<a href="#0">
+												<em class="event-name">GitHub Workshop</em>
+											</a>
+										</li>
+
+										<li class="single-event" data-start="12:00" data-end="13:00" data-content="event-workshop" data-event="event-2">
+											<a href="#0">
+												<em class="event-name">Google Cloud Genomics Workshop</em>
+											</a>
+										</li>
+
+										<li class="single-event" data-start="13:00" data-end="14:00" data-content="event-workshop" data-event="event-2">
+											<a href="#0">
+												<em class="event-name">iOS App Development Workshop</em>
+											</a>
+										</li>
+
+									</ul>
+								</li>
+
+								<li class="events-group">
+									<div class="top-info"><span>Bytes Cafe</span></div>
+									<ul>
+
+										<li class="single-event" data-start="9:00" data-end="9:30" data-content="event-primary" data-event="event-0">
+											<a href="#0">
+												<em class="event-name"></em>
+											</a>
+										</li>
+
+										<li class="single-event" data-start="9:00" data-end="10:15" data-content="event-primary" data-event="event-1">
+											<a href="#0">
+												<em class="event-name">Breakfast</em>
+											</a>
+										</li>
+
+										<li class="single-event" data-start="13:30" data-end="14:30" data-content="event-primary" data-event="event-1">
+											<a href="#0">
+												<em class="event-name">Lunch</em>
+											</a>
+										</li>
+
+										<li class="single-event" data-start="15:45" data-end="16:45"  data-content="event-primary" data-event="event-1">
+											<a href="#0">
+												<em class="event-name">Dinner</em>
+											</a>
+										</li>
+
+									</ul>
 								</li>
 							</ul>
-							</div> -->
+						</div>
+
+						<div class="event-modal">
+							<header class="header">
+								<div class="content">
+									<span class="event-date"></span>
+									<h3 class="event-name"></h3>
+								</div>
+
+								<div class="header-bg"></div>
+							</header>
+
+							<div class="body">
+								<div class="event-info"></div>
+								<div class="body-bg"></div>
+							</div>
+
+							<a href="#0" class="close">Close</a>
+						</div>
+
+						<div class="cover-layer"></div>
+					</div> <!-- .cd-schedule -->
+
 				</div>
 			</div>
 		</div>
@@ -163,15 +254,14 @@
 	<canvas class="bg-mask"></canvas>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
 		window.onload = function() {
 			Particles.init({
 				selector: '.bg-mask',
 				color: ['#b585c6'],
-				speed: 0.8,
+				speed: 0.7,
 				connectParticles: true,
-				maxParticles: 130,
+				maxParticles: 80,
 				minDistance: 135,
 				sizeVariations: 3,
 			})
