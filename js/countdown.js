@@ -37,6 +37,16 @@ var counter = setInterval(function() {
 
 }, 100);
 
-var scheduler = function() {
-  //Todo: OnLoad get time and sort schedule table by passed and upcoming
-};
+// var scheduler = function() {
+//   if (eventDate - new Date().getTime() > 0) {
+//     return;
+//   }
+//
+//   var event = document.getElementById("responsive-table");
+//
+//   for (resp)
+//
+//
+//
+//   //Todo: OnLoad get time and sort schedule table by passed and upcoming
+// };
