@@ -1,21 +1,3 @@
-//~ $(document).ready(function() {
-                
-                //~ var documentEl = $(document),
-                    //~ fadeElem = $('.row');
-                
-                
-                //~ documentEl.on('scroll', function() {
-                    //~ var currScrollPos = documentEl.scrollTop();
-                    
-                    //~ fadeElem.each(function() {
-                        //~ var $this = $(this),
-                            //~ elemOffsetTop = $this.offset().top;
-                        //~ if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/400);
-                    //~ }); 
-                //~ });
-                
-//~ });
-        
 function reveal() {
 	var coll = document.getElementsByClassName("collapsible");
 	var i;
@@ -36,9 +18,9 @@ for (i = 0; i < coll.length; i++) {
 
 'use strict';
 $(function() {
-	var width = $( document ).width()/2.24;
+	var width = $( document ).width()/2.256;
 	var animationSpeed = 450;
-	var pause = 0;
+	var pause = 3000;
 	var currentSlide = 1;
 	var interval;
 	
@@ -73,8 +55,8 @@ $(function() {
 			//~ currentSlide++;
 			//~ if(currentSlide === $slides.length-1) {
 				//~ stopSlider();
-				currentSlide = 1;
-				$slideContainer.css('margin-left', 0);
+				//~ currentSlide = 1;
+				//~ $slideContainer.css('margin-left', 0);
 			//~ }
 		//~ });
 	//~ }, pause);
@@ -86,6 +68,43 @@ $(function() {
 	
 	//~ $slider.on('mouseenter', stopSlider).on('mouseleave',startSlider);
 	
-	//~ //startSlider();
+	//~ startSlider();
 });
 
+'use strict';
+$(function() {
+	if (x.matches) { 
+	var width = $( document ).width()/2.256;
+	}
+	else {
+	var width = $( document ).width()/1.075;
+	}
+	var animationSpeed = 450;
+	var pause = 3000;
+	var currentSlide = 1;
+	var interval;
+	
+	var $slider = $('#slider_1');
+	var $slideContainer = $slider.find('.slides_1');
+	var $slides = $slideContainer.find('.slide_1');
+	
+	
+	function startSlider(){
+		interval = setInterval(function() {
+		$slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function(){
+			currentSlide++;
+			if(currentSlide === $slides.length-1) {
+				currentSlide = 1;
+				$slideContainer.css('margin-left', 0);
+			}
+		});
+	}, pause);
+	}
+	
+	
+	startSlider();
+	
+});
+var x = window.matchMedia("(min-width: 550px)")
+myFunction(x) 
+x.addListener(myFunction)
