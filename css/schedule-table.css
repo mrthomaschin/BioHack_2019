@@ -243,7 +243,7 @@ Main Components
     height: 1900px;
     /* reset style */
     display: block;
-    overflow: hidden;
+    overflow: visible;
     padding: 0;
   }
   .cd-schedule .events .events-group > ul::after {
