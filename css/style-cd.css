@@ -1,5 +1,5 @@
 body,html {
-	overflow: visible;
+	overflow-x: hidden;
 	margin: 0;
 	font-family: Raleway
 }
@@ -394,15 +394,15 @@ a:hover {
 	}
 
 .countdown-container {
-	margin: 64px;
+	margin: 48px;
 	pointer-events: none;
 	cursor: default;
 	color: #ab86ba;
-	width: 450px;
-	padding: 14px 32px 16px;
+	max-width: 450px;
 	background-color: #fff;
 	border-radius: 8px;
 	text-decoration: none;
+	padding: 14px 32px 16px;
 	box-shadow: 0px 0px 9px -3px rgba(0, 0, 0, 0.2);
 }
 
@@ -415,7 +415,7 @@ a:hover {
 	}
 
 	.countdown-units {
-	    color: #bca1c6;
+	  color: #bca1c6;
 		font-family: Raleway;
 		letter-spacing: 1px;
 		font-size: 22px;
